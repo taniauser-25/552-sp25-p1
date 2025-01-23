@@ -1,5 +1,4 @@
-/**Update this file with the starter code**/
-%%writefile lab.c
+
 #include "lab.h"
 #include <stdio.h>
 #include <stdlib.h>
