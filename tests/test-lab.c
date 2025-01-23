@@ -242,6 +242,49 @@ void test_notInList(void)
   free(data);
 }
 
+void test_destroyEmptyList(void) {
+  list_destroy(&lst_);
+  TEST_ASSERT_TRUE(lst_ == NULL);
+}
+
+void test_removeFromEmptyList(void) {
+  void *rval = list_remove_index(lst_, 0);
+  TEST_ASSERT_TRUE(rval == NULL);
+  TEST_ASSERT_TRUE(lst_->size == 0);
+}
+
+void test_removeMiddleElement(void) {
+  populate_list();
+  int *rval = (int *)list_remove_index(lst_, 2);
+  TEST_ASSERT_TRUE(*rval == 2);
+  free(rval);
+
+  TEST_ASSERT_TRUE(lst_->size == 4);
+
+  node_t *curr = lst_->head->next;
+  int expected[] = {4, 3, 1, 0};
+  for (int i = 0; i < 4; i++) {
+    TEST_ASSERT_TRUE(*((int *)curr->data) == expected[i]);
+    curr = curr->next;
+  }
+}
+
+void test_removeLastElement(void) {
+  populate_list();
+  int *rval = (int *)list_remove_index(lst_, lst_->size - 1); // Remove the last element
+  TEST_ASSERT_TRUE(*rval == 0);
+  free(rval);
+
+  TEST_ASSERT_TRUE(lst_->size == 4);
+
+  node_t *curr = lst_->head->next;
+  int expected[] = {4, 3, 2, 1};
+  for (int i = 0; i < 4; i++) {
+    TEST_ASSERT_TRUE(*((int *)curr->data) == expected[i]);
+    curr = curr->next;
+  }
+}
+
 int main(void) {
   UNITY_BEGIN();
   RUN_TEST(test_create_destroy);
@@ -255,5 +298,12 @@ int main(void) {
   RUN_TEST(test_indexOf0);
   RUN_TEST(test_indexOf3);
   RUN_TEST(test_notInList);
+
+  // New tests
+  RUN_TEST(test_destroyEmptyList);
+  RUN_TEST(test_removeFromEmptyList);
+  RUN_TEST(test_removeMiddleElement);
+  RUN_TEST(test_removeLastElement);
+
   return UNITY_END();
 }
