@@ -1,12 +1,12 @@
-# How I ran the code
+
 # For Task 1 and Task 2:
-I did in it Google Colab. To make the lab.h and lab.c I used the following lines of code
+I did code in Google Colab. To execute the lab.h and lab.c, I used the following lines of code
 ``` %%writefile lab.h ```
 and 
 ``` %%writefile lab.c ```
-so if you are runnining it in colab make sure to add these 2 lines to code in each cell of lab.h and lab.c. 
+So, if you are runnining it in colab make sure to add these 2 lines to code in each cell of lab.h and lab.c. 
 
-To run this code in Google Colab:
+To run this code in Google Colab additional steps:
 
 1. Install GCC by running:
 ```bash
@@ -18,7 +18,13 @@ Compile and run the program:
 ```bash
 !gcc lab.c -o lab && ./lab
 ```
-Expected Output:
+Output:
+```bash
+List size: 3
+Index of 'Second': 1
+Removed element: Second
+List size after removal: 2
+```
 
 # For Task 3:
 
