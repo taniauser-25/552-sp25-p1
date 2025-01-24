@@ -1,5 +1,5 @@
 # How I ran the code
-For Task 1 and Task 2:```
+For Task 1 and Task 2:
 I did in it Google Colab. To make the lab.h and lab.c I used the following lines of code
 ``` %%writefile lab.h ```
 and 
