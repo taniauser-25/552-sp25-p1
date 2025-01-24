@@ -1,5 +1,6 @@
 # How I ran the code
-So I did in it Google Colab. To make the lab.h and lab.c I used the following lines of code
+For Task 1 and Task 2:
+I did in it Google Colab. To make the lab.h and lab.c I used the following lines of code
 ``` %%writefile lab.h ```
 and 
 ``` %%writefile lab.c ```
@@ -17,7 +18,7 @@ Compile and run the program:
 ```bash
 !gcc lab.c -o lab && ./lab
 ```
-
+Expected Output:
 # Makefile Project Template
 
 Steps to configure, build, run, and test the project.
