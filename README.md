@@ -61,7 +61,7 @@ Execute the compiled binary to run the tests:
 ```bash
 ./test_lab
 ```
-## Step 4: Output
+Output
 ```bash
 Running test_create_destroy...PASS
 Running test_add1...PASS
