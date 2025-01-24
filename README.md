@@ -19,6 +19,9 @@ Compile and run the program:
 !gcc lab.c -o lab && ./lab
 ```
 Expected Output:
+
+For Task 3:
+
 # Makefile Project Template
 
 Steps to configure, build, run, and test the project.
