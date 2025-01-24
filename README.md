@@ -28,7 +28,6 @@ List size after removal: 2
 
 # For Task 3:
 
-# How to Run the Project
 Prerequisites
 Before running this project, ensure you have the following installed:
   - GCC (GNU Compiler Collection)
@@ -38,17 +37,17 @@ Ensure your project directory has the following structure:
 
 ```bash
 project/
-├── lab.h          # Header file with function declarations
-├── lab.c          # Implementation file
-├── test_lab.c     # Test file with Unity tests
-├── Unity/         # Unity Test Framework (downloaded from GitHub)
+├── lab.h          
+├── lab.c          
+├── test_lab.c     
+├── Unity/         
 │   ├── src/
 │   │   ├── unity.c
 │   │   ├── unity.h
 
 ```
 ## Step 1: Clone Unity Framework
-If Unity Test Framework is not already downloaded, clone it into your project directory:
+As I used Unity Test Framework, if it is not already downloaded, clone it into your project directory:
 ```bash
 git clone https://github.com/ThrowTheSwitch/Unity.git
 ```
@@ -67,7 +66,6 @@ Execute the compiled binary to run the tests:
 ./test_lab
 ```
 ## Step 4: Output
-If all tests pass, you will see output similar to this:
 ```bash
 Running test_create_destroy...PASS
 Running test_add1...PASS
