@@ -1,3 +1,4 @@
+%%writefile lab.h
 #ifndef LAB_H
 #define LAB_H
 #include <stdlib.h>
