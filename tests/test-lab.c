@@ -1,5 +1,7 @@
-#include "harness/unity.h"
-#include "../src/lab.h"
+%%writefile test_lab.c
+
+#include "lab.h"
+#include "Unity/src/unity.h"
 
 
 static list_t *lst_ = NULL;
