@@ -3,9 +3,20 @@ So I did in it Google Colab. To make the lab.h and lab.c I used the following li
 ``` %%writefile lab.h ```
 and 
 ``` %%writefile lab.c ```
-I excluded these lines when uploading the homework in my Github repo.
 so if you are runnining it in colab make sure to add these 2 lines to code in each cell of lab.h and lab.c. 
-and I also used ``` 
+
+To run this code in Google Colab:
+
+1. Install GCC by running:
+```bash
+!apt-get update && apt-get install -y gcc
+```
+
+2. Upload the lab.h and lab.c files to Colab or write them using %%writefile.
+Compile and run the program:
+```bash
+!gcc lab.c -o lab && ./lab
+```
 
 # Makefile Project Template
 
