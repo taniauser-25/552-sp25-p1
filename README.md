@@ -20,7 +20,27 @@ Compile and run the program:
 ```
 Expected Output:
 
-For Task 3:
+# For Task 3:
+
+# How to Run the Project
+Prerequisites
+Before running this project, ensure you have the following installed:
+  - GCC (GNU Compiler Collection)
+  - Unity Test Framework (if using Unity for testing)
+## Project Structure
+Ensure your project directory has the following structure:
+
+```bash
+project/
+├── lab.h          # Header file with function declarations
+├── lab.c          # Implementation file
+├── test_lab.c     # Test file with Unity tests
+├── Unity/         # Unity Test Framework (downloaded from GitHub)
+│   ├── src/
+│   │   ├── unity.c
+│   │   ├── unity.h
+
+```
 
 # Makefile Project Template
 
