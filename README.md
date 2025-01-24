@@ -5,6 +5,7 @@ and
 ``` %%writefile lab.c ```
 I excluded these lines when uploading the homework in my Github repo.
 so if you are runnining it in colab make sure to add these 2 lines to code in each cell of lab.h and lab.c. 
+and I also used ``` 
 
 # Makefile Project Template
 
