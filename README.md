@@ -56,10 +56,6 @@ Run the following command to compile the program:
 ```bash
 gcc test_lab.c lab.c Unity/src/unity.c -o test_lab
 ```
-  - ``` test_lab.c ```: The test file that includes test cases
-  - ``` lab.c ```: The implementation of the functions declared in ``` lab.h ```.
-  - ``` Unity/src/unity.c ```: Unity Test Framework source file.
-  - ``` -o test_lab ```: Output binary file.
 ## Step 3: Run the Tests
 Execute the compiled binary to run the tests:
 ```bash
